@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Core\Chapter.cpp">
+      <Filter>Source Files\Classes\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Core\ImageManager.cpp">
+      <Filter>Source Files\Classes\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Core\TextBoxesManager.cpp">
+      <Filter>Source Files\Classes\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Debug\TestScene.cpp">
+      <Filter>Source Files\Classes\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Scene\SampleScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGPhraser.cpp">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGWord.cpp">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\ScriptEngine.cpp">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\Tokenizer.cpp">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\AbstractTag.cpp">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\ImageTags.cpp">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\SystemTags.cpp">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\TagFactory.cpp">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\TagsDecl.cpp">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\TextTags.cpp">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\AVGDialogBox.cpp">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\ImageObject.cpp">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\TextBox.cpp">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\TextDisplay.cpp">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\TwoStateButton.cpp">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Util\ScriptedValue.cpp">
+      <Filter>Source Files\Classes\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Util\StringUtil.cpp">
+      <Filter>Source Files\Classes\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Util\XMLPharser.cpp">
+      <Filter>Source Files\Classes\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\LeanasFire\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Classes\UI\TextBackground.cpp">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Classes\Scene\TitleScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Classes\Scene\OpeningScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Classes\Scene\OptionsScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Classes\Scene\SaveScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Core\Chapter.h">
+      <Filter>Source Files\Classes\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Core\ImageManager.h">
+      <Filter>Source Files\Classes\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Core\TextBoxesManager.h">
+      <Filter>Source Files\Classes\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Debug\TestMacro.h">
+      <Filter>Source Files\Classes\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Debug\TestScene.h">
+      <Filter>Source Files\Classes\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Debug\test.h">
+      <Filter>Source Files\Classes\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\SNovel.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Scene\SampleScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGPhraser.h">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGWord.h">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\ScriptEngine.h">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\Tokenizer.h">
+      <Filter>Source Files\Classes\ScriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\AbstractTag.h">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\ImageTags.h">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\SystemTags.h">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\TagFactory.h">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\TagsDecl.h">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\TextTags.h">
+      <Filter>Source Files\Classes\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\AVGDialogBox.h">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\ImageObject.h">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\TextBox.h">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\TextDisplay.h">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\TwoStateButton.h">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Util\ScriptedValue.h">
+      <Filter>Source Files\Classes\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Util\StringUtil.h">
+      <Filter>Source Files\Classes\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Util\XMLPharser.h">
+      <Filter>Source Files\Classes\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\NovelPart\ChapterScripts\test2.sov">
+      <Filter>Resources\NovelPart\ChapterScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\font\msjh.ttc">
+      <Filter>Resources\font</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\LeanasFire\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Classes\UI\TextBackground.h">
+      <Filter>Source Files\Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Classes\Scene\TitleScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Classes\Scene\OpeningScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Classes\Scene\OptionsScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Classes\Scene\SaveScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\LeanasFire\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Source\LeanasFire\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{88AA1DEC-926B-3F8E-B023-5E3AC9728EAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\NovelPart">
+      <UniqueIdentifier>{2EB3CDAF-6072-3514-9465-E9B74D38ADA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\NovelPart\ChapterScripts">
+      <UniqueIdentifier>{55D1C6DB-7B3C-34D8-AEAC-5F33C118DE0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\font">
+      <UniqueIdentifier>{7FA32BD7-21D0-3CA0-8A4D-150E00C056C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{8850109F-9A7F-33B1-B61A-11B7CC38FE36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{96302706-3BB4-3BBB-A9CB-CCD7D80DC82F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5BC74D6D-4113-3F11-B771-E8083B62A754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{EB552433-E55B-351F-8F95-14968CC88240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Core">
+      <UniqueIdentifier>{9F018898-845D-38F7-BB8D-BE3E09240F24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Debug">
+      <UniqueIdentifier>{C8DB3C2E-C1FF-328D-A9C9-133E308B3B00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Scene">
+      <UniqueIdentifier>{F61EA439-BCFB-323E-AB91-2860EC7750D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\ScriptEngine">
+      <UniqueIdentifier>{59C1CC04-2947-36BE-9513-286BF9277627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Tags">
+      <UniqueIdentifier>{F5171C92-0B8E-31BB-A361-18185A6036C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\UI">
+      <UniqueIdentifier>{D89405C2-75BB-3A43-A1D5-76C2DDF4B9EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Util">
+      <UniqueIdentifier>{491B7464-DED2-359B-BABC-8E214F8D3DC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{F156CCBE-8295-3EA2-BD47-1C696B1DF834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image">
+      <UniqueIdentifier>{18cfaae8-209f-4c4a-a9b5-e6d3f6d80781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image\NPC">
+      <UniqueIdentifier>{21a902f3-5ad6-4c99-a0a7-d77feec7dbc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image\Locations">
+      <UniqueIdentifier>{70068dd5-cd91-412b-85ec-96c1d8c2aa8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image\Locations\School">
+      <UniqueIdentifier>{fc2159c5-d2c5-45db-9c9c-0a4ac31edecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image\Backgrounds">
+      <UniqueIdentifier>{aa060789-206a-411e-9766-2bc1c299aa06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image\Title">
+      <UniqueIdentifier>{955d4e7f-e5e6-41be-836f-71136ead2dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\image\Locations\Beach">
+      <UniqueIdentifier>{08bb1659-0472-49c9-b49f-ebd4690b1449}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Resources\image\Locations\School\classroom_1.jpg">
+      <Filter>Resources\image\Locations\School</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Locations\School\classroom_1.png">
+      <Filter>Resources\image\Locations\School</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Backgrounds\background_a.png">
+      <Filter>Resources\image\Backgrounds</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Backgrounds\background_a_no_name.png">
+      <Filter>Resources\image\Backgrounds</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\background.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\logo.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\button.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\exit.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\load.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\options.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Title\start.png">
+      <Filter>Resources\image\Title</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\NPC\aila.png">
+      <Filter>Resources\image\NPC</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\NPC\leena.png">
+      <Filter>Resources\image\NPC</Filter>
+    </Image>
+    <Image Include="..\..\Resources\image\Locations\Beach\beach_1.png">
+      <Filter>Resources\image\Locations\Beach</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Resources\fonts\AbhayaLibre-Regular.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\..\Resources\fonts\Pangram-Regular.otf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+  </ItemGroup>
+</Project>

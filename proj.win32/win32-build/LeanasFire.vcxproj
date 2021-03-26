@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32A71C79-9832-3E55-9395-A1EF147FE66A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>LeanasFire</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Source\LeanasFire\proj.win32\win32-build\bin\LeanasFire\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">LeanasFire.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">LeanasFire</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Source\LeanasFire\proj.win32\win32-build\bin\LeanasFire\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">LeanasFire.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">LeanasFire</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Source\LeanasFire\proj.win32\win32-build\bin\LeanasFire\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">LeanasFire.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">LeanasFire</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Source\LeanasFire\proj.win32\win32-build\bin\LeanasFire\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">LeanasFire.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">LeanasFire</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Source/LeanasFire/proj.win32/win32-build/Debug/LeanasFire.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Debug/LeanasFire.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Source/LeanasFire/proj.win32/win32-build/Release/LeanasFire.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/Release/LeanasFire.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Source/LeanasFire/proj.win32/win32-build/MinSizeRel/LeanasFire.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/MinSizeRel/LeanasFire.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Source\LeanasFire\Classes;C:\Source\LeanasFire\cocos2d\cocos\audio\include;C:\Source\LeanasFire\cocos2d;C:\Source\LeanasFire\cocos2d\cocos;C:\Source\LeanasFire\cocos2d\extensions;C:\Source\LeanasFire\cocos2d\cocos\platform;C:\Source\LeanasFire\cocos2d\cocos\editor-support;C:\Source\LeanasFire\cocos2d\cocos\base;C:\Source\LeanasFire\cocos2d\cocos\platform\win32;C:\Source\LeanasFire\cocos2d\external\recast\..;C:\Source\LeanasFire\cocos2d\external\tinyxml2\.;C:\Source\LeanasFire\cocos2d\external\xxhash\.;C:\Source\LeanasFire\cocos2d\external\xxtea\.;C:\Source\LeanasFire\cocos2d\external\clipper\.;C:\Source\LeanasFire\cocos2d\external\edtaa3func\.;C:\Source\LeanasFire\cocos2d\external\ConvertUTF\.;C:\Source\LeanasFire\cocos2d\external\poly2tri\..;C:\Source\LeanasFire\cocos2d\external\md5\..;C:\Source\LeanasFire\cocos2d\external\unzip\.;C:\Source\LeanasFire\cocos2d\external\Box2D\include;C:\Source\LeanasFire\cocos2d\external\chipmunk\include;C:\Source\LeanasFire\cocos2d\external\freetype2\include\win32\freetype2;C:\Source\LeanasFire\cocos2d\external\bullet\include;C:\Source\LeanasFire\cocos2d\external\bullet\include\bullet;C:\Source\LeanasFire\cocos2d\external\jpeg\include\win32;C:\Source\LeanasFire\cocos2d\external\openssl\include\win32;C:\Source\LeanasFire\cocos2d\external\uv\include;C:\Source\LeanasFire\cocos2d\external\webp\include\win32;C:\Source\LeanasFire\cocos2d\external\websockets\include\win32;C:\Source\LeanasFire\cocos2d\external\curl\include\win32;C:\Source\LeanasFire\cocos2d\external\png\include\win32;C:\Source\LeanasFire\cocos2d\external\win32-specific\gles\include\OGLES;C:\Source\LeanasFire\cocos2d\external\win32-specific\icon\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\MP3Decoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OggDecoder\include;C:\Source\LeanasFire\cocos2d\external\win32-specific\OpenalSoft\include;C:\Source\LeanasFire\cocos2d\external\glfw3\include\win32;C:\Source\LeanasFire\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Source/LeanasFire/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Source/LeanasFire/proj.win32/win32-build/RelWithDebInfo/LeanasFire.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Source/LeanasFire/proj.win32/win32-build/bin/LeanasFire/RelWithDebInfo/LeanasFire.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\LeanasFire\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Source/LeanasFire/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Source/LeanasFire -BC:/Source/LeanasFire/proj.win32/win32-build --check-stamp-file C:/Source/LeanasFire/proj.win32/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Source/LeanasFire/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Source/LeanasFire -BC:/Source/LeanasFire/proj.win32/win32-build --check-stamp-file C:/Source/LeanasFire/proj.win32/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Source/LeanasFire/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Source/LeanasFire -BC:/Source/LeanasFire/proj.win32/win32-build --check-stamp-file C:/Source/LeanasFire/proj.win32/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Source/LeanasFire/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Source/LeanasFire -BC:/Source/LeanasFire/proj.win32/win32-build --check-stamp-file C:/Source/LeanasFire/proj.win32/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Source\LeanasFire\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Classes\Scene\OpeningScene.h" />
+    <ClInclude Include="..\..\Classes\Scene\OptionsScene.h" />
+    <ClInclude Include="..\..\Classes\Scene\SaveScene.h" />
+    <ClInclude Include="..\..\Classes\UI\TextBackground.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Core\Chapter.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Core\ImageManager.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Core\TextBoxesManager.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Debug\TestMacro.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Debug\TestScene.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Debug\test.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\SNovel.h" />
+    <ClInclude Include="..\..\Classes\Scene\TitleScene.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Scene\SampleScene.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGPhraser.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGWord.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\ScriptEngine.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\ScriptEngine\Tokenizer.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\AbstractTag.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\ImageTags.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\SystemTags.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\TagFactory.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\TagsDecl.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Tags\TextTags.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\AVGDialogBox.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\ImageObject.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\TextBox.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\TextDisplay.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\UI\TwoStateButton.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Util\ScriptedValue.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Util\StringUtil.h" />
+    <ClInclude Include="C:\Source\LeanasFire\Classes\Util\XMLPharser.h" />
+    <ClInclude Include="C:\Source\LeanasFire\proj.win32\main.h" />
+    <ClInclude Include="C:\Source\LeanasFire\proj.win32\resource.h" />
+    <ClCompile Include="..\..\Classes\Scene\OpeningScene.cpp" />
+    <ClCompile Include="..\..\Classes\Scene\OptionsScene.cpp" />
+    <ClCompile Include="..\..\Classes\Scene\SaveScene.cpp" />
+    <ClCompile Include="..\..\Classes\UI\TextBackground.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Core\Chapter.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Core\ImageManager.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Core\TextBoxesManager.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Debug\TestScene.cpp" />
+    <ClCompile Include="..\..\Classes\Scene\TitleScene.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Scene\SampleScene.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGPhraser.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\KAGWord.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\ScriptEngine.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\ScriptEngine\Tokenizer.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\AbstractTag.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\ImageTags.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\SystemTags.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\TagFactory.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\TagsDecl.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Tags\TextTags.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\AVGDialogBox.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\ImageObject.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\TextBox.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\TextDisplay.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\UI\TwoStateButton.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Util\ScriptedValue.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Util\StringUtil.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\Classes\Util\XMLPharser.cpp" />
+    <ClCompile Include="C:\Source\LeanasFire\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\Source\LeanasFire\proj.win32\game.rc" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\NovelPart\ChapterScripts\test2.sov" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\font\msjh.ttc" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Source\LeanasFire\Resources\res\.gitkeep" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{CCC79DE5-C129-3BCB-8047-D83CF08E9640}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\SYNC_RESOURCE-LeanasFire.vcxproj">
+      <Project>{67A417E5-337E-38BB-AEE7-F7C458430F4B}</Project>
+      <Name>SYNC_RESOURCE-LeanasFire</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{058F3EE0-62CA-3DC0-BEFF-10CCC3E72771}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{EB3CE425-C6F9-39EC-908A-C43E167B71C9}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{A52D83B5-1684-3BCD-A10D-A0EFDDBA9C93}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{EF4E18E7-1E71-38C3-BB86-4F355ED4715D}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{90C40728-8164-3C8C-95DA-5A7F084D5752}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{6F969664-2C69-3AE7-8D6E-FA2B42E2A426}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{39424D63-88BA-39E5-89E0-BBD7DA8190C5}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{C558887D-94AA-3B64-A5DE-3BD3BA56CFF6}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{B6CE6907-8E53-33B0-BBFB-40FCD06AFDE4}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{1452F67F-CE18-333C-AEF8-AFB97729FC57}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{CF4D97FC-438E-380F-99E1-BA3AD37F0A2F}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Source\LeanasFire\proj.win32\win32-build\engine\external\external.vcxproj">
+      <Project>{AE5A5EDD-F8E0-3F72-885E-5A42AC57E1FD}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Resources\image\Backgrounds\background_a.png" />
+    <Image Include="..\..\Resources\image\Backgrounds\background_a_no_name.png" />
+    <Image Include="..\..\Resources\image\Locations\Beach\beach_1.png" />
+    <Image Include="..\..\Resources\image\Locations\School\classroom_1.jpg" />
+    <Image Include="..\..\Resources\image\Locations\School\classroom_1.png" />
+    <Image Include="..\..\Resources\image\NPC\aila.png" />
+    <Image Include="..\..\Resources\image\NPC\leena.png" />
+    <Image Include="..\..\Resources\image\Title\background.png" />
+    <Image Include="..\..\Resources\image\Title\button.png" />
+    <Image Include="..\..\Resources\image\Title\exit.png" />
+    <Image Include="..\..\Resources\image\Title\load.png" />
+    <Image Include="..\..\Resources\image\Title\logo.png" />
+    <Image Include="..\..\Resources\image\Title\options.png" />
+    <Image Include="..\..\Resources\image\Title\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Resources\fonts\AbhayaLibre-Regular.ttf" />
+    <Font Include="..\..\Resources\fonts\Pangram-Regular.otf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

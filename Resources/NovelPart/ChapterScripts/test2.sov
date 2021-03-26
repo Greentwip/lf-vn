@@ -1,0 +1,32 @@
+[image_new name=background path=image/Locations/Beach/beach_1.png]
+[image_new name=malgra path=image/NPC/leena.png]
+ 
+[image_show name=background pos=custom x=0.5 y=0.5 layer=bg zorder=-2]
+
+[fadein name=background time=1]
+
+[image_show name=malgra pos=custom x=-0.25 y=0.5 layer=bg zorder=-1]
+
+[clear_message]
+[clear_name]
+
+Un viento cálido me atrapa entre las olas del mar
+[reline]
+No me sorprende ver la arena, estoy acostumbrada.
+[reline]
+
+[pause]
+
+[clear_name]
+[clear_message]
+
+Alguien se acerca.[static_print]
+
+[move name=malgra x=0.25 y=0.5 time=1]
+
+[pause]
+
+#Malgra
+
+Debe ser un buen día para encontrarnos, supongo.[streamed_print]
+

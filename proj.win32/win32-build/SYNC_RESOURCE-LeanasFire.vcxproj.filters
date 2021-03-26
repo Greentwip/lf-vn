@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\129b9214ccbcdbadf05aeac9fb9e9b99\SYNC_RESOURCE-LeanasFire.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Source\LeanasFire\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Source\LeanasFire\proj.win32\win32-build\CMakeFiles\SYNC_RESOURCE-LeanasFire" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5B1CF03F-EEE1-3456-B606-5E7A2C068C24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
